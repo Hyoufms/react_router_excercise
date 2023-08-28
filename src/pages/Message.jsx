@@ -20,7 +20,13 @@ export default function Message() {
                         return (
                             <li key={data.id}>
                                 {/* <Link to={`detail/${data.id}/${data.title}/${data.content}`}>{data.content}</Link> */}
-                                <Link to={`detail?id=${data.id}&title=${data.title}&content=${data.content}`}>{data.content}</Link>
+                                {/* <Link to={`detail?id=${data.id}&title=${data.title}&content=${data.content}`}>{data.content}</Link> */}
+                                <Link to="detail" state={{
+                                    id:data.id,
+                                    title: data.title,
+                                    content: data.content,
+                                    }}
+                                >{data.title}</Link>
                             </li>
                         )
                     })
