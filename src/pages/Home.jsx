@@ -11,7 +11,7 @@ export default function Home() {
                         <NavLink className="list-group-item" to="news">News</NavLink>
                     </li>
                     <li>
-                        <NavLink className="list-group-item" to="/home/message">Message</NavLink>
+                        <NavLink className="list-group-item" to="./message">Message</NavLink>
                     </li>
                 </ul>
                 {/* Router Components will be shown here */}
