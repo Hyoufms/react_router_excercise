@@ -14,7 +14,8 @@ export default function Message() {
     ])
 
     function showDetail(data) {
-        //parameters: (path, params:{replace, state}), 
+        //parameters: (path, params:{replace, state}), in this ways, data can only be passed to components with state
+        //otherwise, by using <useParams> or <useSearchParams>, data should be written in path.
         nevigate('detail', {
             replace: false,
             state: {
